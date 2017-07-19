@@ -14,6 +14,8 @@
 		CE3CB1021EFE2920004FAC98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3CB1001EFE2920004FAC98 /* LaunchScreen.storyboard */; };
 		CE3CB10D1EFE2920004FAC98 /* DeckOfCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3CB10C1EFE2920004FAC98 /* DeckOfCardsTests.swift */; };
 		CE3CB1181EFE2920004FAC98 /* DeckOfCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3CB1171EFE2920004FAC98 /* DeckOfCardsUITests.swift */; };
+		CE3CB1261EFE2947004FAC98 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3CB1251EFE2947004FAC98 /* Deck.swift */; };
+		CE3CB1641EFE2AD5004FAC98 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3CB1631EFE2AD5004FAC98 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		CE3CB1131EFE2920004FAC98 /* DeckOfCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeckOfCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3CB1171EFE2920004FAC98 /* DeckOfCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckOfCardsUITests.swift; sourceTree = "<group>"; };
 		CE3CB1191EFE2920004FAC98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3CB1251EFE2947004FAC98 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		CE3CB1631EFE2AD5004FAC98 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				CE3CB0F71EFE2920004FAC98 /* AppDelegate.swift */,
 				CE3CB0F91EFE2920004FAC98 /* ViewController.swift */,
+				CE3CB1251EFE2947004FAC98 /* Deck.swift */,
+				CE3CB1631EFE2AD5004FAC98 /* Card.swift */,
 				CE3CB0FB1EFE2920004FAC98 /* Main.storyboard */,
 				CE3CB0FE1EFE2920004FAC98 /* Assets.xcassets */,
 				CE3CB1001EFE2920004FAC98 /* LaunchScreen.storyboard */,
@@ -193,6 +199,7 @@
 				TargetAttributes = {
 					CE3CB0F31EFE2920004FAC98 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = SM2R6CMMFK;
 						ProvisioningStyle = Automatic;
 					};
 					CE3CB1071EFE2920004FAC98 = {
@@ -259,8 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3CB1261EFE2947004FAC98 /* Deck.swift in Sources */,
 				CE3CB0FA1EFE2920004FAC98 /* ViewController.swift in Sources */,
 				CE3CB0F81EFE2920004FAC98 /* AppDelegate.swift in Sources */,
+				CE3CB1641EFE2AD5004FAC98 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SM2R6CMMFK;
 				INFOPLIST_FILE = DeckOfCards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = user.DeckOfCards;
@@ -426,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SM2R6CMMFK;
 				INFOPLIST_FILE = DeckOfCards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = user.DeckOfCards;
@@ -507,6 +518,7 @@
 				CE3CB11E1EFE2920004FAC98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE3CB11F1EFE2920004FAC98 /* Build configuration list for PBXNativeTarget "DeckOfCardsTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +527,7 @@
 				CE3CB1211EFE2920004FAC98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE3CB1221EFE2920004FAC98 /* Build configuration list for PBXNativeTarget "DeckOfCardsUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +536,7 @@
 				CE3CB1241EFE2920004FAC98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
